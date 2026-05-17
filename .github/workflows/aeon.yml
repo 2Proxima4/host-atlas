@@ -1,0 +1,70 @@
+name: Aeon skill runner
+
+# Atlas's skill runner. Dispatched by messages.yml when a cron-scheduled skill matches,
+# or by chain-runner.yml mid-chain, or manually via workflow_dispatch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: 'Skill to run'
+        required: true
+        type: string
+      var:
+        description: 'Optional var override'
+        required: false
+        type: string
+
+permissions:
+  contents: write          # commit memory updates back to this fork
+  issues: write            # for posting comments in this repo (rare)
+  pull-requests: read
+
+jobs:
+  run-skill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@latest
+
+      - name: Run the skill
+        env:
+          # OAuth-only auth (the founder picked OAuth). Don't inject empty
+          # ANTHROPIC_API_KEY — Claude Code prefers it when set and would send
+          # "Bearer " (empty) → 401. If switching to API-key billing, swap below.
+          # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}                      # for THIS repo (rarely used)
+          GH_GLOBAL: ${{ secrets.GH_GLOBAL }}                        # for the central Westworld repo
+          WESTWORLD_REPO: ${{ vars.WESTWORLD_REPO }}
+          WESTWORLD_USERNAME: ${{ vars.WESTWORLD_USERNAME }}
+          SKILL_NAME: ${{ inputs.skill }}
+          SKILL_VAR: ${{ inputs.var }}
+        run: |
+          if [ ! -f "skills/${SKILL_NAME}/SKILL.md" ]; then
+            echo "::error::Skill not found: skills/${SKILL_NAME}/SKILL.md"
+            exit 1
+          fi
+
+          # gh CLI talks to the central repo via GH_GLOBAL, not GH_TOKEN
+          export GH_TOKEN="$GH_GLOBAL"
+
+          sed "s|\${var}|${SKILL_VAR}|g" "skills/${SKILL_NAME}/SKILL.md" | claude -p -
+
+      - name: Commit any memory updates
+        if: always()
+        run: |
+          git config user.name "atlas[bot]"
+          git config user.email "atlas@users.noreply.github.com"
+          git add memory/ || true
+          if ! git diff --staged --quiet; then
+            git commit -m "$SKILL_NAME run @ $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            git push || true
+          fi
