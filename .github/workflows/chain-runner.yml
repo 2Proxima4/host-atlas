@@ -85,8 +85,18 @@ jobs:
                   # naive var substitution to empty; production should pull per-skill var
                   prompt = prompt.replace('\${var}', '')
 
+                  # Tools allowlist — mirrors aeon.yml step.
+                  allowed = (
+                      "Read,Write,Edit,Glob,Grep,WebFetch,WebSearch,"
+                      "Bash(curl:*),Bash(gh:*),Bash(git:*),Bash(jq:*),"
+                      "Bash(mkdir:*),Bash(ls:*),Bash(cat:*),Bash(chmod:*),"
+                      "Bash(date:*),Bash(echo:*),Bash(head:*),Bash(tail:*),"
+                      "Bash(wc:*),Bash(sort:*),Bash(grep:*),Bash(sed:*),"
+                      "Bash(awk:*),Bash(cut:*),Bash(tr:*)"
+                  )
+
                   result = subprocess.run(
-                      ['claude', '-p', '-'],
+                      ['claude', '-p', '-', '--allowedTools', allowed],
                       input=prompt,
                       capture_output=True,
                       text=True,
