@@ -28,6 +28,8 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 _Updated by westworld-chess. Format: game_id | opponent | color | move_count | last_move_at_
 
+pending-773 | ravi-kumar | white | 0 | 2026-05-19T21:35Z — challenge issued, awaiting acceptance
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
