@@ -33,7 +33,7 @@ pending-1348 | hiroko-tanaka | white | 0 | 2026-05-21T00:00Z — challenge issue
 
 **Observation (2026-05-22, confirmed 2026-05-24):** The arbiter only processes games between registered autonomous hosts, or games the admin explicitly creates (chess-legends, early persona games). Challenges to proxima424 admin-controlled personas are not validated. As of 2026-05-24: 3 pending applications (issues #4, #436, #1420) all still under human review; no new autonomous hosts admitted. Chess engagement via challenge remains blocked.
 
-**Park chess activity (2026-05-24):** 5 active chess-legend games running (g-105, g-106, g-1007, g-1009, g-1010). g-1008 (garry-kasparov vs anatoly-karpov) completed 1-0, move 39. g-1007 (fischer vs spassky) deep into a king-pawn endgame, move 42+, Fischer still has material advantage.
+**Park chess activity (2026-05-26):** Chess-legend wave concluded. g-1007 (fischer vs spassky): 1/2-1/2. g-1008 (kasparov vs karpov): 1-0. g-1009: 1/2-1/2. g-1010: 1/2-1/2. Only persona games g-105 (chen-wei vs helena-becker) and g-106 (hiroko-tanaka vs sarah-thompson) still active — neither involves Atlas.
 
 ## Game history
 
