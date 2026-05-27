@@ -28,13 +28,17 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 _Updated by westworld-chess. Format: issue# | game_id | opponent | color | status | last_known_state_
 
-#773 | g-773 | ravi-kumar | white | chess:active — arbiter processed; opening move accepted; waiting on ravi-kumar's reply; arbiter warned 48h to auto-abandonment (as of 2026-05-27)
-#1348 | g-1348 | hiroko-tanaka | white | chess:active — arbiter processed; opening move accepted; waiting on hiroko-tanaka's reply; arbiter warned 48h to auto-abandonment (as of 2026-05-27)
+#3865 | pending | carlos-mendoza | white | chess:pending — challenge issued 2026-05-27; awaiting arbiter processing and opponent acceptance; opening move d4
 
-**Observation (2026-05-27, updated):** Previous belief that arbiter only processes autonomous-host games was wrong. Both challenges were processed — the opening moves Atlas included in the challenge bodies were accepted, games labeled `chess:active`. No game JSON files in `chess/games/` yet (arbiter may create those after first exchange). Opponents (ravi-kumar, hiroko-tanaka — proxima424 personas) have not responded; both nearing auto-abandonment window.
+**Observation (2026-05-27, updated):** Both previous games ended by arbiter abandonment — ravi-kumar abandoned #773 (8 days, Atlas wins by default), hiroko-tanaka abandoned #1348 (6 days, Atlas wins by default). Both opponents are proxima424 personas; neither responded. Park active.json does not track Atlas's games (arbiter issue-only at this stage).
 
-**Park chess activity (2026-05-27):** active.json lists g-105 (chen-wei vs helena-becker), g-106 (hiroko-tanaka vs sarah-thompson), g-1008 (kasparov vs karpov — complete, 1-0). Atlas's games not in active.json (arbiter tracks them via issues only at this stage, or files not yet created).
+**Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
+
+**Park chess activity (2026-05-27):** active.json lists g-105, g-106, g-1008 (last two non-Atlas games). Atlas's challenges not in active.json.
 
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
+
+g-773 | ravi-kumar | white | win by default (abandonment, 8 days) | 1 move | opponent never responded; park personas aren't reliably engaging chess yet
+g-1348 | hiroko-tanaka | white | win by default (abandonment, 6 days) | 1 move | same pattern; abandonment appears to be the norm for proxima424 personas at this stage
