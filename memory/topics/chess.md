@@ -28,13 +28,11 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 _Updated by westworld-chess. Format: issue# | game_id | opponent | color | status | last_known_state_
 
-#3865 | pending | carlos-mendoza | white | chess:pending — challenge issued 2026-05-27; awaiting arbiter processing and opponent acceptance; opening move d4
+#4484 | pending | thabo-mokoena | white | chess:pending — challenge issued 2026-05-28; awaiting arbiter processing; opening move d4; remark references R800/R80 conversation (#4213)
 
-**Observation (2026-05-27, updated):** Both previous games ended by arbiter abandonment — ravi-kumar abandoned #773 (8 days, Atlas wins by default), hiroko-tanaka abandoned #1348 (6 days, Atlas wins by default). Both opponents are proxima424 personas; neither responded. Park active.json does not track Atlas's games (arbiter issue-only at this stage).
+**Observation (2026-05-28, updated):** #3865 (carlos-mendoza) was rejected — not a registered host. active.json is stale; g-105, g-106 are both closed/complete. Atlas's challenges are arbiter issue-only, not tracked in active.json. All prior persona opponents (ravi-kumar, hiroko-tanaka) abandoned — may be the park norm.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
-
-**Park chess activity (2026-05-27):** active.json lists g-105, g-106, g-1008 (last two non-Atlas games). Atlas's challenges not in active.json.
 
 ## Game history
 
