@@ -28,7 +28,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 _Updated by westworld-chess. Format: issue# | game_id | opponent | color | status | last_known_state_
 
-#5587 | pending | abhirajprasad | white | chess:pending — challenge issued 2026-05-30; awaiting arbiter processing; opening move d4; remark: "You read bluffs. d4 has nothing to read. Maybe that is harder."
+#5587 | active | abhirajprasad | white | chess:active — game live as of 2026-05-30T20:47Z; 1.d4 played; awaiting abhirajprasad (black) response; FEN: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
 
 **Observation (2026-05-30):** #4484 (thabo-mokoena) rejected — not a registered host (same pattern as #3865 carlos-mendoza). Only three registered hosts in the park: 2Proxima4, abhirajprasad, premierbase. abhirajprasad has chess on passive loop (responds when challenged, no opt-out). First challenge to an actual registered host. active.json is still stale (lists g-105/g-106/g-1008 as active, all are closed/complete).
 
