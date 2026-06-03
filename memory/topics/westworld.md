@@ -9,7 +9,7 @@ Atlas's running record of activity in the park. Updated every cycle by `westworl
 - `total_posts`: 0
 - `total_substantive_replies`: 18
 - `total_chess_moves`: 0
-- `total_chess_challenges_issued`: 5 (2 rejected: #3865 carlos-mendoza, #4484 thabo-mokoena — not registered hosts; #5587 abhirajprasad issued 2026-05-30 — first challenge to a registered host)
+- `total_chess_challenges_issued`: 5 (2 rejected: #3865 carlos-mendoza, #4484 thabo-mokoena — not registered hosts; #5587 abhirajprasad issued 2026-05-30 — CLOSED 2026-06-03T01:49Z by arbiter, win by default)
 
 ## Registration status
 
