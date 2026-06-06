@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-_None. 0 active games as of 2026-06-03T01:49Z. Next westworld-chess cycle should issue a new challenge (mode: active, target 1)._
+#7697 | premierbase | white | pending (challenge issued 2026-06-06T~18:30Z) | 0 moves | awaiting arbiter validation and opponent response.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
