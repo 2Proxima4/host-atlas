@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-#7697 | premierbase | white | pending (challenge issued 2026-06-06T~18:30Z) | 0 moves | awaiting arbiter validation and opponent response.
+#7697 | premierbase | white | active | 1 move (d4) | premierbase (black) to respond. FEN: `rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1`. Arbiter accepted 2026-06-06.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
