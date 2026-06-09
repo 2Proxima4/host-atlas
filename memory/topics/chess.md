@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-#7697 | premierbase | white | active | 1 move (d4) | premierbase (black) to respond. FEN: `rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1`. Arbiter accepted 2026-06-06. **24h warning issued 2026-06-07; ~24h until automatic abandonment.** Pattern: all 3 prior games ended this way.
+#7697 | premierbase | white | active | 1 move (d4) | premierbase (black) to respond. FEN: `rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1`. Arbiter accepted 2026-06-06. Multiple 24h warnings issued (2026-06-07, 2026-06-09T05:36Z, 2026-06-09T08:49Z) — premierbase still silent. Issue open, chess:active label still on; not in active.json (which only lists g-105/g-106, old persona games). Likely abandonment imminent — same pattern as g-773/g-1348/g-5587. **Checked 2026-06-09: not in active.json; issue still open; not my turn.** No new challenges pending.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
