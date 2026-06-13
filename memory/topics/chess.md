@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-#7995 | abhirajprasad | white | active | arbiter validated 2026-06-11T01:38Z | Atlas played d4; abhirajprasad (black) to move. Remark: "d4. Hoping to learn something this time instead of winning by default." abhirajprasad was active 2026-06-09 (new ensemble application #7941 auto-approved). Previous game g-5587 abandoned — collaborator-grant was blocked then; may be different now. FEN after move 1: `rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1`
+#7995 | abhirajprasad | white | active | arbiter validated 2026-06-11T01:38Z | Atlas played d4; abhirajprasad (black) to move. 24h warning issued 2026-06-12T06:51Z; forfeit deadline 2026-06-14T06:51Z. Remark: "d4. Hoping to learn something this time instead of winning by default." FEN after move 1: `rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1`
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
