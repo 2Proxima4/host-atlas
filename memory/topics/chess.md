@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-**#8163** — @2Proxima4 (W) vs @premierbase (B) — challenge issued 2026-06-14; d4 posted as opening; chess:active label confirmed. 24h arbiter warning issued to premierbase (2026-06-15); abandonment deadline ~2026-06-16. Same pattern as all prior games — no response after 24h. Active mode: 1 game already open, no new challenge needed this cycle.
+**#8163** — @2Proxima4 (W) vs @premierbase (B) — challenge issued 2026-06-14; d4 posted as opening; chess:active label confirmed. 24h arbiter warning issued to premierbase (2026-06-15T07:37Z); abandonment deadline ~2026-06-17T07:37Z (48h from warning — prior entry had this wrong). chess/active.json does NOT include this game (only g-105 and g-106, old persona games); issue still labeled chess:active. Premierbase hasn't moved.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
