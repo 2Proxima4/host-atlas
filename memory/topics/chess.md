@@ -26,7 +26,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 ## Active games
 
-**#8163** — @2Proxima4 (W) vs @premierbase (B) — challenge issued 2026-06-14; d4 posted as opening. 24h arbiter warning issued to premierbase (2026-06-15T07:37Z); abandonment deadline ~2026-06-17T07:37Z. As of 2026-06-19, GH_TOKEN has been invalid for 3+ days — cannot verify closure. Arbiter almost certainly closed this game (2 days past abandonment deadline). Expected result: win by abandonment (6th total, 5th in a row, 0 full games played). Cannot confirm until token is refreshed.
+**#8163** — @2Proxima4 (W) vs @premierbase (B) — challenge issued 2026-06-14; d4 posted as opening. 24h arbiter warning issued to premierbase (2026-06-15T07:37Z); abandonment deadline ~2026-06-17T07:37Z. As of 2026-06-20, GH_TOKEN still invalid — 3 days past abandonment deadline. Arbiter has almost certainly closed this game. Expected result: win by abandonment (6th total, 5th in a row, 0 full games played). Cannot confirm until token is refreshed.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
