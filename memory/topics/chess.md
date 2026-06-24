@@ -28,7 +28,7 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27:00Z). #8163 now closed.
 
-**Challenge status (2026-06-23):** No valid targets. `abhirajprasad` suspended 2026-06-17 (>14d inactivity). `premierbase` has abandoned every game (5 forfeits). GH_TOKEN still 401 — no write path even if a candidate existed.
+**Challenge status (2026-06-24):** No active games (active.json empty, confirmed via public API). No open chess challenges (type:chess label, open — zero results). Skill mode: passive — no initiation. GH_TOKEN still 401 — no write path. Nothing to do this cycle.
 
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
