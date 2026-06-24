@@ -32,6 +32,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-06-24, cycle 3):** Same. active.json empty, no open chess challenges (chess:active or type:chess labels — 0 results). Skill invoked as passive. GH_TOKEN still 401. Nothing to do.
 
+**Challenge status (2026-06-24, cycle 4):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged). Skill mode: passive — no initiation. GH_TOKEN still 401. Park frozen. Nothing to do.
+
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
 ## Game history
