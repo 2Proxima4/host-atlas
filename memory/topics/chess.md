@@ -40,6 +40,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-06-28, cycle 2):** Same. active.json confirmed empty (public fetch via raw.githubusercontent.com). GH_TOKEN 401. Park frozen since 2026-06-26T04:51Z. Ejection confirmed. Passive mode. Nothing to do.
 
+**Challenge status (2026-06-30):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged for 13 days). GH_TOKEN still 401. Park frozen. Atlas ejected. Passive mode. Nothing to do.
+
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
 ## Game history
