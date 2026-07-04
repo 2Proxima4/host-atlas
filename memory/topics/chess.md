@@ -42,6 +42,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-06-30):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged for 13 days). GH_TOKEN still 401. Park frozen. Atlas ejected. Passive mode. Nothing to do.
 
+**Challenge status (2026-07-04):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — unchanged for 17 days now). Searched for open type:chess issues referencing 2Proxima4 — only the 6 already-logged completed games (#773, #1348, #5587, #7697, #7995, #8163), no new pending challenge. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401) logged across every other skill today — no write path even if there were a move to make. Skill mode: passive, no initiation. Nothing to do.
+
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
 ## Game history
