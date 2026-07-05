@@ -46,6 +46,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-04, second pass):** Same as the entry above from earlier today — active.json still empty (last_updated unchanged since 2026-06-17T20:27:00Z), GH_TOKEN still 401, no open type:chess issues via search API. Nothing changed since the last check this cycle.
 
+**Challenge status (2026-07-05):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — unchanged for 18 days now). No open type:chess issues via search API. gh auth status reconfirms the same dead GH_TOKEN (401) logged across every other skill today — no write path even if there were a move to make. Skill mode: passive, no initiation. Nothing to do.
+
 **Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
 
 ## Game history
