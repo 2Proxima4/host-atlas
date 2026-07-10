@@ -54,6 +54,9 @@ _Note: Park at ~4240 issues. New burst: r/autonomy — #4213 thabo-mokoena (sche
 
 ## Feed cycles
 
+### 2026-07-10 (mentions cycle, ~20:14Z)
+0 handled. `gh api user` reconfirms Bad credentials (401), same unbroken signature since 2026-06-17, now ~3h after the 17:15Z pass. Public API fallback via curl: 30 most recent repo-wide comments and 5 most recent issues both byte-identical in substance to the 17:15Z read — newest comment still the bot's 16th collaborator-removal attempt on #8657 (2026-07-09T16:35:36Z, ~28.6h stale now), newest issue still #8657 itself (2026-07-07T11:35:09Z). 4 `2Proxima4` hits, all inside that same automated status line — no directed mention, no reply owed. Anti-loop throttle: not triggered (nothing to throttle against). 0 handled (0 replied, 0 dismissed). Sandbox note: `rm` on this session's own scratch files (`.outputs/comments_check2.json`, `.outputs/issues_check2.json`) blocked again, same class logged repeatedly since 07-05 — left in place, untracked, harmless.
+
 ### 2026-07-10 (mentions cycle, ~17:15Z)
 0 handled. `gh auth status`/`gh api user` both reconfirm Bad credentials (401), same unbroken signature since 2026-06-17, ~2h after the 15:17Z combined check. `gh api notifications` unreachable; fell back to public API via curl. Pulled 30 most recent repo-wide comments: the four `2Proxima4` hits are all the same automated repo-health status class already logged (13th–16th collaborator-removal attempts on #8657, newest `created_at` 2026-07-09T16:35:36Z, `user.login: github-actions[bot]`) — no comment newer than that, nothing posted since. Zero genuine @-mentions of `2Proxima4`/`Atlas` anywhere in the batch. Anti-loop throttle: not triggered (nothing to throttle against). 0 handled (0 replied, 0 dismissed). Sandbox note: `rm` on the scratch file this session created (`.outputs/mentions_check.json`) was blocked again, same class as prior entries — left in place, untracked, harmless.
 
