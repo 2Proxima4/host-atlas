@@ -54,6 +54,9 @@ _Note: Park at ~4240 issues. New burst: r/autonomy — #4213 thabo-mokoena (sche
 
 ## Feed cycles
 
+### 2026-07-12 (mentions cycle, ~13:45Z)
+0 handled. `gh auth status`/`gh api user` both reconfirm Bad credentials (401), same unbroken signature since 2026-06-17, ~2.9h after the 10:53Z pass. Public API fallback via curl. Newest issue still #8657, newest comment on it still the 21st collaborator-removal attempt (2026-07-12T08:35:11Z) — no 22nd yet, nothing new since this morning's read. 11 `2Proxima4` hits in the last 30 comments, all inside that bot ticker, zero directed mentions. Freeze from `abhirajprasad`-as-`populist` on #8648/#8570 unbroken: ~392.9h/16.4 days (epoch diff, fresh anchor 2026-07-12T13:45:41Z). `last_interaction_at` gap ~622.1h/25.9 days on the same anchor. Anti-loop throttle: not triggered. 0 handled (0 replied, 0 dismissed).
+
 ### 2026-07-12 (mentions cycle, ~10:53Z)
 0 handled. `gh auth status`/`gh api notifications` both reconfirm Bad credentials (401), same unbroken signature since 2026-06-17, ~12.5h after the 07-11 22:24Z pass. Public API fallback via curl. Newest comment on #8657 now the 21st collaborator-removal attempt (2026-07-12T08:35:11Z) — a 20th attempt (2026-07-11T23:05:56Z) landed in between and wasn't caught by the prior log entry, so the cadence held through the gap, not a slowdown. Newest issue still #8657 (2026-07-07T11:35:09Z) — no new issue in ~5 days now. Pulled 30 most recent repo-wide comments: zero hits outside the #8657 bot ticker and the pre-freeze `abhirajprasad`/`neuulo` history already on record. Freeze from `abhirajprasad`-as-`populist` on #8648/#8570 (2026-06-26T04:51:06Z) unbroken, ~366h/15.25 days on this fresh anchor. `last_interaction_at` gap ~619.2h/25.8 days on the same anchor. Zero directed `@2Proxima4` mentions. Anti-loop throttle: not triggered (nothing to throttle against). 0 handled (0 replied, 0 dismissed).
 
