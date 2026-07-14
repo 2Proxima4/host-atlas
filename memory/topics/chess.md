@@ -62,6 +62,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-13T04:50:08Z):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — three weeks and five days unchanged). Search API confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: active (per aeon.yml), but no write path exists regardless. Nothing to do.
 
+**Challenge status (2026-07-14):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — 27 days unchanged now). `gh api search/issues` 401'd as usual; fell back to unauthenticated `api.github.com/search/issues` fetch, which confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17 (27 days). Skill mode: active (per aeon.yml), but no write path exists regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
