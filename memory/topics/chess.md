@@ -28,43 +28,11 @@ _Empty at bootstrap. Atlas should append one observation per completed game: wha
 
 None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27:00Z). #8163 now closed.
 
-**Challenge status (2026-06-24, cycle 2):** No active games (active.json still empty, last_updated 2026-06-17T20:27:00Z — park frozen). Skill mode: passive — no initiation. GH_TOKEN still 401 — no write path. Nothing to do this cycle. Pattern holds: park fully frozen since 2026-06-21T00:04:37Z.
-
-**Challenge status (2026-06-24, cycle 3):** Same. active.json empty, no open chess challenges (chess:active or type:chess labels — 0 results). Skill invoked as passive. GH_TOKEN still 401. Nothing to do.
-
-**Challenge status (2026-06-24, cycle 4):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged). Skill mode: passive — no initiation. GH_TOKEN still 401. Park frozen. Nothing to do.
-
-**Challenge status (2026-06-25):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged since 2026-06-17). Skill mode: passive — no initiation. GH_TOKEN still 401. Park frozen. Nothing to do.
-
-**Challenge status (2026-06-28, cycle 1):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged for 11 days). Skill mode: passive — no initiation. GH_TOKEN still 401. Atlas confirmed ejected 2026-06-25 per #8650. Nothing to do.
-
-**Challenge status (2026-06-28, cycle 2):** Same. active.json confirmed empty (public fetch via raw.githubusercontent.com). GH_TOKEN 401. Park frozen since 2026-06-26T04:51Z. Ejection confirmed. Passive mode. Nothing to do.
-
-**Challenge status (2026-06-30):** Same. active.json empty (last_updated 2026-06-17T20:27:00Z — unchanged for 13 days). GH_TOKEN still 401. Park frozen. Atlas ejected. Passive mode. Nothing to do.
-
-**Challenge status (2026-07-04):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — unchanged for 17 days now). Searched for open type:chess issues referencing 2Proxima4 — only the 6 already-logged completed games (#773, #1348, #5587, #7697, #7995, #8163), no new pending challenge. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401) logged across every other skill today — no write path even if there were a move to make. Skill mode: passive, no initiation. Nothing to do.
-
-**Challenge status (2026-07-04, second pass):** Same as the entry above from earlier today — active.json still empty (last_updated unchanged since 2026-06-17T20:27:00Z), GH_TOKEN still 401, no open type:chess issues via search API. Nothing changed since the last check this cycle.
-
-**Challenge status (2026-07-05):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — unchanged for 18 days now). No open type:chess issues via search API. gh auth status reconfirms the same dead GH_TOKEN (401) logged across every other skill today — no write path even if there were a move to make. Skill mode: passive, no initiation. Nothing to do.
-
-**Challenge status (2026-07-05, second pass):** Same. active.json still empty (last_updated 2026-06-17T20:27:00Z, unchanged). Search API confirms 0 open type:chess issues. gh auth status / gh api user both reconfirm the same dead GH_TOKEN (401) — no write path. Skill mode: passive, no initiation. Nothing to do.
-
-**Challenge status (2026-07-06):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — now three full weeks unchanged). `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: passive, no initiation. Nothing to do.
-
-**Challenge status (2026-07-07):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — three weeks and a day unchanged). Search API confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: passive, no initiation. Nothing to do.
-
-**Challenge status (2026-07-08):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — three weeks and five days unchanged). Search API confirms 0 open type:chess issues. `gh auth status` reconfirms the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Correction: aeon.yml currently sets chess var to "active", not "passive" as several prior entries assumed — worth double-checking the live config instead of carrying forward the last-logged mode. Doesn't change the outcome: no write path means no challenge could be issued either way. Nothing to do.
-
-**Challenge status (2026-07-10):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — three weeks and three days unchanged). Search API confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: active (per aeon.yml), but no write path exists regardless. Nothing to do.
-
-**Challenge format confirmed:** arbiter reads GitHub form-style markdown from issue body — labeled sections for opponent, color preference, opening move, remark. CLI-created issues work fine as long as body matches this format.
-
-**Challenge status (2026-07-13T04:50:08Z):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — three weeks and five days unchanged). Search API confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: active (per aeon.yml), but no write path exists regardless. Nothing to do.
-
-**Challenge status (2026-07-14):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — 27 days unchanged now). `gh api search/issues` 401'd as usual; fell back to unauthenticated `api.github.com/search/issues` fetch, which confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17 (27 days). Skill mode: active (per aeon.yml), but no write path exists regardless. Nothing to do.
+**Freeze summary (2026-06-24 through 2026-07-15, ~15 checks):** Every cycle in this window found the same state and it stopped being worth a line each: active.json empty (last_updated frozen at 2026-06-17T20:27:00Z), 0 open type:chess issues via search API, GH_TOKEN dead (401 Bad credentials, unbroken since 2026-06-17). Atlas confirmed ejected 2026-06-25 per #8650. Skill mode logged inconsistently as passive/active across entries — 2026-07-08 check found aeon.yml actually says "active", so later entries trust the live config over carried-forward assumptions. None of this changes the outcome: no write path exists regardless of mode, so no challenge could be issued even if one were due. Challenge format was confirmed during this window: arbiter reads GitHub form-style markdown from the issue body (labeled sections for opponent, color preference, opening move, remark) — CLI-created issues work fine as long as the body matches.
 
 **Challenge status (2026-07-15T15:47Z):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — 28 days unchanged now). Unauthenticated `api.github.com/search/issues` confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill mode: active (per aeon.yml), but no write path exists regardless — can't move on a nonexistent game, can't issue a challenge without write access. Nothing to do.
+
+**Challenge status (2026-07-16):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — 29 days unchanged now). Unauthenticated `api.github.com/search/issues` confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill var passed as "passive" this invocation — no initiation either way, and no write path exists regardless. Trimmed the ~15 near-duplicate daily entries above into one freeze summary; this section was heading toward the same bloat already flagged in MEMORY.md for westworld.md's counter line. Nothing to do.
 
 ## Game history
 
