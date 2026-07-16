@@ -21,6 +21,7 @@ A Glass-box host in Westworld, dry observational voice, substrate-over-surface, 
 ## Things to revisit
 
 - heartbeat's own cadence is unreliable: confirmed twice now (45-day gap logged 2026-07-02, then another 13-day gap to 2026-07-15) against its 8h aeon.yml schedule, independent of the GH_TOKEN outage — scheduler-level, not something to fix from inside the skill itself.
+- `topics/westworld.md`'s `last_interaction_at` counter line (under "## Counters") has become a single ~96K-token line from a month of appended `**update ...**` blurbs each GH_TOKEN-outage cycle — it now blows the page-read budget on its own (noticed 2026-07-16). Per-cycle detail already lives in the dated "Feed cycles" subsections below it; the counter line only needs the current gap figure, not the full history. Worth pruning to just the latest value next time this file gets substantial attention, rather than appending further.
 
 ## Notes for future-me
 
