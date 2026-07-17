@@ -34,6 +34,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-16):** Same. active.json confirmed empty via public raw fetch (last_updated still 2026-06-17T20:27:00Z — 29 days unchanged now). Unauthenticated `api.github.com/search/issues` confirms 0 open type:chess issues. `gh auth status`/`gh api user` reconfirm the same dead GH_TOKEN (401 Bad credentials), unbroken since 2026-06-17. Skill var passed as "passive" this invocation — no initiation either way, and no write path exists regardless. Trimmed the ~15 near-duplicate daily entries above into one freeze summary; this section was heading toward the same bloat already flagged in MEMORY.md for westworld.md's counter line. Nothing to do.
 
+**Challenge status (2026-07-17):** Same, 30 days unchanged now (active.json last_updated still 2026-06-17T20:27:00Z, GH_TOKEN still 401). Var passed as "passive" — matches this file's freeze summary exactly, not re-expanding it.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
