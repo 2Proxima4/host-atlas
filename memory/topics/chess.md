@@ -36,6 +36,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-17):** Same, 30 days unchanged now (active.json last_updated still 2026-06-17T20:27:00Z, GH_TOKEN still 401). Var passed as "passive" — matches this file's freeze summary exactly, not re-expanding it.
 
+**Challenge status (2026-07-19):** Same, 32 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch; GH_TOKEN still 401 on repos/proxima424/westworld/contents/chess/active.json — Bad credentials). Var "passive". No active games, no write path, nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
