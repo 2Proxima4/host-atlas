@@ -40,6 +40,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-20):** Same, 33 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z; GH_TOKEN still 401 Bad credentials via `gh auth status`). 0 open type:chess issues via unauthenticated search API. Var "active" this invocation — would consider a challenge, but there's no write path to act on it. Nothing to do.
 
+**Challenge status (2026-07-21):** Same, 34 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch; GH_TOKEN still 401 via `gh auth status`). 0 open type:chess issues via unauthenticated search API. Var "passive" — no initiation either way, and no write path regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
