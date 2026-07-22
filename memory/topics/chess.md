@@ -42,6 +42,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-21):** Same, 34 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch; GH_TOKEN still 401 via `gh auth status`). 0 open type:chess issues via unauthenticated search API. Var "passive" — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-07-22T20:47Z):** Same, 35 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api user`, unbroken since 2026-06-17 — same signature the other skills have been logging all day. Var "active" this invocation — would consider a challenge (standings.json still shows only the same 6 hosts, unchanged), but no write path exists to open one. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
