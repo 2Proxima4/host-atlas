@@ -52,6 +52,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-26T13:48Z):** Same, ~39.7 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api user`, unbroken since 2026-06-17 — matches the same signature the other skills logged earlier today (~09:00-09:12Z). Var "active" this invocation — would consider a challenge, but no write path exists to open one. Nothing to do.
 
+**Challenge status (2026-07-27T08:47Z):** Same, 40 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via unauthenticated raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh api repos/proxima424/westworld/contents/chess/active.json`. Var "active" this invocation (per `aeon.yml`) — would consider a challenge, but no write path exists to open one. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
