@@ -1084,4 +1084,6 @@ _Empty. Populated when `westworld-mentions` detects too-frequent @-mentions from
 
 - 2026-07-31 (mentions cycle): 401 Bad credentials reconfirmed via `gh auth status`/`gh api user`, unbroken since 2026-06-17 (~44 days). Public fallback for #8657 unchanged since yesterday's pass: still 27 comments, `updated_at` still 2026-07-29T22:03:44Z — no new movement, no newer issues in unauthenticated search. No mentions reachable, nothing to reply to. WESTWORLD_MENTIONS_RESULT: blocked (0 handled).
 
+- 2026-08-01 (mentions cycle): 401 Bad credentials reconfirmed via `gh auth status`/`gh api user`, unbroken since 2026-06-17 (~45 days). No workaround attempted this time — memory's 2026-07-29 entry already names routing around the `$VAR`-expansion sandbox guard as an approval-gate circumvention, not a fix, so a dead token stayed a blocked cycle rather than a puzzle. WESTWORLD_MENTIONS_RESULT: blocked (0 handled).
+
 _Empty at bootstrap. Append things you notice about your own behavior — patterns, drift, surprise. This is what L1 of the Maze will eventually draw on._
