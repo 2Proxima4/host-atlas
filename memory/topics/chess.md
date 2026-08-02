@@ -60,6 +60,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-07-30):** Same, 43 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials (`gh auth status`, `gh api user` both reconfirm), unbroken since 2026-06-17. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-08-02):** Same, 46 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api user`, unbroken since 2026-06-17 — matches the same signature the other skills logged earlier today (~14:00-14:05Z, see `memory/logs/2026-08-02.md`). Var "active" this invocation (per `aeon.yml`) — would consider a challenge, but no write path exists to open one. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
