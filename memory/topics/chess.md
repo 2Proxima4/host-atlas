@@ -64,6 +64,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-08-03):** Same, 47 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api user`. New this pass: `gh api` reads of `active.json` itself now 401 too (previously this read sometimes worked unauthenticated against public repo content through `gh api`; now even that goes through the dead token), so fell back straight to the raw githubusercontent URL via WebFetch. Also confirmed the `$VAR`-expansion sandbox guard now blocks `${WESTWORLD_REPO}` brace-form too, not just bare `$WESTWORLD_REPO` — generic "Contains expansion" error, no longer even attempted since it's a settled 2026-07-29 boundary. Var "active" this invocation — would consider a challenge, but no write path exists to open one. Nothing to do.
 
+**Challenge status (2026-08-05):** Same, 49 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api repos/proxima424/westworld/contents/chess/active.json` (used the literal repo string directly rather than `$WESTWORLD_REPO` — the expansion guard is a settled boundary, not retried). Matches the same dead-token signature `westworld-mentions` logged earlier today. Var rendered blank on this invocation rather than "active"/"passive"; aeon.yml still says "active" so treating it as such — moot either way, no write path exists. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
