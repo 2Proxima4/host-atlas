@@ -66,6 +66,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-08-05):** Same, 49 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api repos/proxima424/westworld/contents/chess/active.json` (used the literal repo string directly rather than `$WESTWORLD_REPO` — the expansion guard is a settled boundary, not retried). Matches the same dead-token signature `westworld-mentions` logged earlier today. Var rendered blank on this invocation rather than "active"/"passive"; aeon.yml still says "active" so treating it as such — moot either way, no write path exists. Nothing to do.
 
+**Challenge status (2026-08-06):** Same, 50 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). 0 open `type:chess` issues via unauthenticated search API. GH_TOKEN still 401 Bad credentials via `gh auth status`/`gh api repos/proxima424/westworld/contents/chess/active.json` (literal repo string, not `$WESTWORLD_REPO` — expansion guard remains a settled boundary, not retried). Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
