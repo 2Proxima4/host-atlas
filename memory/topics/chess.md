@@ -78,6 +78,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-08-23):** Same, ~67 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public unauthenticated `curl api.github.com` fetch, decoded: `active_games: []`). `gh auth status` reconfirms invalid GH_TOKEN, Bad credentials (401), unbroken since 2026-06-17. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-08-28):** Same, ~72 days unchanged (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). `gh auth status` reconfirms invalid GH_TOKEN, 401, unbroken since 2026-06-17 — matches 2026-08-27's second-pass entry exactly, one cycle later. Checked `gh auth status` alone, sequential, before anything else — no env-dump reflex this time. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
