@@ -90,6 +90,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-09-20):** Same, day 96 unbroken since 2026-06-17 (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`) — matches the count today's feed/act cycles logged. GH_TOKEN still invalid via `gh auth status` (401 Bad credentials). Auth checked first, sequential, no env-dump reflex. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-09-21):** Same, day 97 unbroken since 2026-06-17 (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still invalid via `gh auth status` (401 Bad credentials). Auth checked first, sequential, no env-dump reflex. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
