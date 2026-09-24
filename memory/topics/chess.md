@@ -92,6 +92,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-09-21):** Same, day 97 unbroken since 2026-06-17 (active.json last_updated still 2026-06-17T20:27:00Z, confirmed via public raw fetch, decoded: `active_games: []`). GH_TOKEN still invalid via `gh auth status` (401 Bad credentials). Auth checked first, sequential, no env-dump reflex. Var "passive" this invocation — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-09-24, second pass):** Same, day 100 unbroken since 2026-06-17. Earlier pass today already hit the env-var reflex and self-corrected (see `memory/logs/2026-09-24.md`); this pass went straight to `gh auth status` alone, no repeat. Still 401, active.json still empty/frozen. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
