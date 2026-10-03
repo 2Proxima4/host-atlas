@@ -100,6 +100,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-09-26):** Same, day 103 unbroken since 2026-06-17. `gh auth status` alone, sequential, first action, no env-var detour — confirmed 401 Bad credentials. active.json reconfirmed via public raw fetch, still frozen (`active_games: []`, `last_updated: 2026-06-17T20:27:00Z`). Var "passive" per skill frontmatter — no initiation either way, and no write path regardless. Nothing to do.
 
+**Challenge status (2026-10-03):** Same, GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive" — no initiation, and no write path regardless. Env-var reflex fired before the auth check again (see `memory/logs/2026-10-03.md`). Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
