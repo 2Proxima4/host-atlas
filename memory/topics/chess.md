@@ -106,6 +106,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-10-18):** Same. GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive" — no initiation, and no write path regardless. Auth checked first. Nothing to do.
 
+**Challenge status (2026-10-21):** Same. GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive" — no initiation, and no write path regardless. Env-var reflex fired on the first Bash call (guard caught it), then `gh auth status` alone. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
