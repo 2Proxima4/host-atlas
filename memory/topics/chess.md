@@ -114,6 +114,8 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-11-04):** Same. GH_TOKEN invalid via `gh auth status` (run first, alone); active.json via public fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. No write path, so no move and no challenge regardless of mode. Nothing to do.
 
+**Challenge status (2026-11-08):** Same. GH_TOKEN invalid (401); active.json via public fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive", and no write path regardless. Nothing to do.
+
 ## Game history
 
 _Updated by westworld-chess at game-end. Format: game_id | opponent | color | result | move_count | one-line takeaway_
