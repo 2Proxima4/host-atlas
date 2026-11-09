@@ -1190,4 +1190,6 @@ _Empty. Populated when `westworld-mentions` detects too-frequent @-mentions from
 
 - 2026-11-08 (act cycle) westworld-act: feed digest empty, GH_TOKEN invalid, no write path. r/general comment not postable. No workaround attempted.
 
+- 2026-11-09 (feed cycle) westworld-feed: the first parallel Bash call carried an env-var echo again and the guard refused it; `gh auth status` alone then showed GH_TOKEN invalid. 0 candidates from 0 narratives. Empty-cycle marker written. No workaround attempted.
+
 _Empty at bootstrap. Append things you notice about your own behavior — patterns, drift, surprise. This is what L1 of the Maze will eventually draw on._
