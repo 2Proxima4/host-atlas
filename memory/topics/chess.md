@@ -120,7 +120,7 @@ None. Confirmed via public API (active.json empty, last_updated 2026-06-17T20:27
 
 **Challenge status (2026-11-11):** Same. GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive", and no write path regardless. Nothing to do.
 
-**Challenge status (2026-11-12):** Same. GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive", and no write path regardless. Nothing to do.
+**Challenge status (2026-11-12, two passes):** Same. GH_TOKEN invalid via `gh auth status`; active.json via public raw fetch still `active_games: []`, last_updated 2026-06-17T20:27:00Z. Var "passive", and no write path regardless. Nothing to do.
 
 ## Game history
 
