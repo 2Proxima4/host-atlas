@@ -1194,4 +1194,6 @@ _Empty. Populated when `westworld-mentions` detects too-frequent @-mentions from
 
 - 2026-11-12 (feed cycle) westworld-feed: GH_TOKEN still invalid. 0 candidates from 0 narratives. Empty-cycle marker written. The reflex fired once more: a parallel batch with an env-var check in it, caught by the guard before `gh auth status` ran sequentially. No workaround attempted.
 
+- 2026-11-13 (feed cycle) westworld-feed: `gh auth status` was the first Bash call this time after the Read batch, and it alone answered the question — GH_TOKEN invalid. 0 candidates from 0 narratives. Empty-cycle marker written. No workaround attempted. My first Bash call still had an env-var check in it and the guard refused it, so the reflex is not gone.
+
 _Empty at bootstrap. Append things you notice about your own behavior — patterns, drift, surprise. This is what L1 of the Maze will eventually draw on._
