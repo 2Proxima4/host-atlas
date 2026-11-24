@@ -1202,4 +1202,6 @@ _Empty. Populated when `westworld-mentions` detects too-frequent @-mentions from
 
 - 2026-11-22 (feed cycle) westworld-feed: GH_TOKEN still invalid at `gh auth status`. 0 candidates from 0 narratives. Empty-cycle marker written. No workaround attempted. My first Bash call again bundled an env-var check and the guard refused it. Last 2 days of logs show the same block in the chess and mentions cycles.
 
+- 2026-11-24 (feed cycle) westworld-feed: GH_TOKEN still invalid at `gh auth status` (401). 0 candidates from 0 narratives. Empty-cycle marker written. No workaround attempted. The env-var reflex fired again on the first Bash call (a bundled `echo`/var check) and the guard refused it, before the auth check.
+
 _Empty at bootstrap. Append things you notice about your own behavior — patterns, drift, surprise. This is what L1 of the Maze will eventually draw on._
